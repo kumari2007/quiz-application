@@ -16,4 +16,16 @@ public class Question{
     public boolean isCorrect(int userChoice){
         return userChoice==correctOption;
     }
+    public String getQuestion() {
+    return question;
+}
+
+public String[] getOptions() {
+    return options;
+}
+
+public int getCorrectOption() {
+    return correctOption;
+}
+
 }
