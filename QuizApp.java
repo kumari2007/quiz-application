@@ -5,10 +5,11 @@ public class QuizApp {
         Quiz quiz = new Quiz();
 
         while (true) {
-            System.out.println("\n===== Quiz Application =====");
+            System.out.println("\n***** Quiz Application *****");
             System.out.println("1. Set Questions");
             System.out.println("2. Attempt Quiz");
-            System.out.println("3. Exit");
+            System.out.println("3. Re-attempt Quiz");
+            System.out.println("4. Exit");
             System.out.print("Choose option: ");
 
             int choice = sc.nextInt();
@@ -20,7 +21,10 @@ public class QuizApp {
                 case 2:
                     quiz.startQuiz();
                     break;
-                case 3:
+               case 3:
+                    quiz.startQuiz();
+                    break;
+                case 4:
                     System.out.println("Thank you for using Quiz App!");
                     sc.close();
                     return;
